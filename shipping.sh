@@ -28,7 +28,7 @@ mysql -h mysql-dev.vin95.online -uroot -pRoboShop@1 < /app/schema/shipping.sql
 echo -e "\e[36m>>>>>>>> Setup systemD service<<<<<<<<\e[0m"
 cp /home/centos/roboshop-shell/shipping.service /etc/systemd/system/shipping.service
 
-echo -e "\e[36m>››>›››››› Start Shipping Service «‹«<‹le[0m"
+echo -e "\e[36m>>>>>>>>>> Start Shipping Service <<<<<<<<<\e[0m"
 systemctl daemon-reload
 systemctl enable shipping
 systemctl restart shipping
