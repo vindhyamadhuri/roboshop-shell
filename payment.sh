@@ -16,7 +16,7 @@ cd /app
 unzip /tmp/payment.zip
 
 echo -e "\e[36m>›››››››› Install Dependencies <‹‹<<<<<\e[0m"
-pip3.6 install -r requirements. txt
+pip3.6 install -r requirements.txt
 
 echo -e "\e[36m>››››››>›Setup SystemD Service ««‹‹‹‹<<\e[0m"
 cp /home/centos/roboshop-shell/payment.service /etc/system/system/payment.service
