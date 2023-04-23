@@ -22,6 +22,6 @@ echo -e "\e[36m>››››››>›Setup SystemD Service ««‹‹‹‹<<\e
 cp /home/centos/roboshop-shell/payment.service /etc/systemd/system/payment.service
 
 echo -e "\e[36m>›››››››> Start Payment Service «‹‹‹‹‹<<\e[0m"
-systemctl deamon-reload
+systemctl daemon-reload
 systemctl enable payment
 systemctl restart payment
