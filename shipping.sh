@@ -25,6 +25,9 @@ yum install mysql -y
 echo -e "\e[36m>›››››››› Load Schema «‹‹‹‹<<<\e[0m"
 mysql -h mysql-dev.vin95.online -uroot -pRoboShop@1 < /app/schema/shipping.sql
 
+echo -e "\e[36m>>>>>>>> Setup systemD service<<<<<<<<\e[0m"
+cp /home/centos/roboshop-shell/shipping.service /etc/systemd/system/shipping.service
+
 echo -e "\e[36m>››>›››››› Start Shipping Service «‹«<‹le[0m"
 systemct1 daemon-reload
 systemct1 enable shipping
